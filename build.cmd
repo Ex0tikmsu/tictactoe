@@ -1,8 +1,14 @@
 @echo off
-echo ===== Construim proiectul TicTacToe =====
-g++ src/*.cpp -I include -o tictactoe.exe
-if %errorlevel% neq 0 (
-    echo ❌ Compilare esuata!
-    exit /b %errorlevel%
-)
-echo ✅ Compilare reusita! Executabil creat: tictactoe.exe
+echo ==== Building TicTacToe Project ====
+
+:: Compilăm toate fișierele cpp în obiecte
+g++ -c Board.cpp
+g++ -c Player.cpp
+g++ -c Game.cpp
+g++ -c main.cpp
+
+:: Legăm obiectele într-un executabil final
+g++ Board.o Player.o Game.o main.o -o tictactoe.exe
+
+echo ==== Build complete! ====
+pause
