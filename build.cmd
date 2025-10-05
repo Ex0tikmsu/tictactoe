@@ -8,7 +8,7 @@ g++ -c GameEngine.cpp
 g++ -c main.cpp
 
 :: Legăm obiectele într-un executabil final
-g++ Board.o Player.o Game.o main.o -o tictactoe.exe
+g++ Board.o Player.o GameEngine.o main.o -o tictactoe.exe
 
 echo ==== Build complete! ====
 pause
