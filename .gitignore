@@ -1,0 +1,9 @@
+# Fișiere obiect
+*.o
+
+# Executabile
+*.exe
+*.out
+
+# Director build (dacă faci compilare separată)
+build/
