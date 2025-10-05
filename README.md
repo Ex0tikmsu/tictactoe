@@ -29,3 +29,6 @@ Proiectul permite doi jucători să se joace pe rând pe o tablă 3x3.
 
 ## Observații
 Proiectul este structurat pe **OOP** pentru a separa clar responsabilitățile între jucători, tablă și motorul jocului, facilitând întreținerea și extinderea codului.
+
+## Metoda de creatie
+In cmd in fisierul local a jocului deschidem CMD , facem buildul prin comanda "build.cmd", dupa ce build e facut , scriem comanda tictactoe.exe, si jocul va rula
